@@ -8,21 +8,40 @@ public class SellStock {
     private BuyStock buyStock;
     private LocalDate sellDate;
     private double sellPrice;
-    private int quantitySold;
+    private int quantity;
 
     public SellStock(Long sellId, BuyStock buyStock,
-                     LocalDate sellDate, double sellPrice,
-                     int quantitySold) {
+                     LocalDate sellDate, double sellPrice, int quantity) {
         this.sellId = sellId;
         this.buyStock = buyStock;
         this.sellDate = sellDate;
         this.sellPrice = sellPrice;
-        this.quantitySold = quantitySold;
+        this.quantity = quantity;
     }
 
-    public BuyStock getBuyStock() { return buyStock; }
+    // -------- GETTERS --------
+    public Long getSellId() {
+        return sellId;
+    }
+
+    public BuyStock getBuyStock() {
+        return buyStock;
+    }
+
+    public LocalDate getSellDate() {
+        return sellDate;
+    }
+
+    public double getSellPrice() {
+        return sellPrice;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    // -------- BUSINESS METHOD --------
     public double getSellAmount() {
-        return sellPrice * quantitySold;
+        return sellPrice * quantity;
     }
 }
-

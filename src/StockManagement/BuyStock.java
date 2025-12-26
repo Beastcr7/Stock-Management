@@ -9,30 +9,43 @@ public class BuyStock {
     private LocalDate buyDate;
     private double buyPrice;
     private int quantity;
-    private boolean fullySold;
 
-    public BuyStock(Long buyId, Stock stock, LocalDate buyDate,
-                    double buyPrice, int quantity) {
+    public BuyStock(Long buyId, Stock stock,
+                    LocalDate buyDate, double buyPrice, int quantity) {
         this.buyId = buyId;
         this.stock = stock;
         this.buyDate = buyDate;
         this.buyPrice = buyPrice;
         this.quantity = quantity;
-        this.fullySold = false;
     }
 
-    public Long getBuyId() { return buyId; }
-    public Stock getStock() { return stock; }
-    public LocalDate getBuyDate() { return buyDate; }
-    public double getBuyPrice() { return buyPrice; }
-    public int getQuantity() { return quantity; }
-    public boolean isFullySold() { return fullySold; }
+    // -------- GETTERS --------
+    public Long getBuyId() {
+        return buyId;
+    }
+
+    public Stock getStock() {
+        return stock;
+    }
+
+    public LocalDate getBuyDate() {
+        return buyDate;
+    }
+
+    public double getBuyPrice() {
+        return buyPrice;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    // -------- SETTERS --------
+    public void setBuyPrice(double buyPrice) {
+        this.buyPrice = buyPrice;
+    }
 
     public void reduceQuantity(int soldQty) {
         this.quantity -= soldQty;
-        if (this.quantity == 0) {
-            this.fullySold = true;
-        }
     }
 }
-

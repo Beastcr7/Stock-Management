@@ -17,9 +17,41 @@ public class Stock {
         this.currentMarketPrice = currentMarketPrice;
     }
 
-    public Long getStockId() { return stockId; }
-    public String getSymbol() { return symbol; }
-    public String getCompanyName() { return companyName; }
-    public Sector getSector() { return sector; }
-    public double getCurrentMarketPrice() { return currentMarketPrice; }
+    // -------- GETTERS --------
+    public Long getStockId() {
+        return stockId;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public Sector getSector() {
+        return sector;
+    }
+
+    public double getCurrentMarketPrice() {
+        return currentMarketPrice;
+    }
+
+    // -------- SETTERS --------
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public void setSector(Sector sector) {
+        this.sector = sector;
+    }
+
+    public void setCurrentMarketPrice(double currentMarketPrice) {
+        this.currentMarketPrice = currentMarketPrice;
+    }
 }

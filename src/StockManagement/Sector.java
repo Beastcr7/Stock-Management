@@ -18,16 +18,20 @@ public class Sector {
         return sectorId;
     }
 
+    public void setSectorId(Long sectorId) {
+        this.sectorId = sectorId;
+    }
+
     public String getSectorName() {
         return sectorName;
     }
 
-    public BigDecimal getCurrentIndex() {
-        return currentIndex;
-    }
-
     public void setSectorName(String sectorName) {
         this.sectorName = sectorName;
+    }
+
+    public BigDecimal getCurrentIndex() {
+        return currentIndex;
     }
 
     public void setCurrentIndex(BigDecimal currentIndex) {

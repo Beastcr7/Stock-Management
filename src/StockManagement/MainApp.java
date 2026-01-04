@@ -29,7 +29,7 @@ public class MainApp {
      switch (choice){
 
          case 1 :
-             sectorService.SectorMenu(sc);
+             sectorService.sectorMenu(sc);
              break;
 
          case 2:

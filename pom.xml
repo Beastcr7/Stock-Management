@@ -37,7 +37,7 @@
              <version>6.4.4.Final</version>
          </dependency>
 
-         <!-- Logging (required by Hibernate) -->
+         <!--- Logging (required by Hibernate) -->
          <dependency>
              <groupId>org.jboss.logging</groupId>
              <artifactId>jboss-logging</artifactId>

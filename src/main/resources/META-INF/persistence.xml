@@ -7,7 +7,7 @@
 
     <persistence-unit name="StockPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-<!---classe-->
+<!---class-->
         <class>com.stockmanagement.Sector</class>
         <class>com.stockmanagement.Stock</class>
         <class>com.stockmanagement.BuyStock</class>
